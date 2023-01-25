@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textSize="@dimen/_20sdp"
+        android:text="Enter your email"
+        android:gravity="center"
+        android:textColor="#707070"
+        android:id="@+id/VipText"/>
+
+    <EditText
+        android:id="@+id/EditTextHash"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@id/VipText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/back_gray_shape"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtWrong"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextHash"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@id/txtWrong"
+        android:layout_toStartOf="@id/EditTextHash"
+        android:layout_marginRight="@dimen/_minus20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/CheckRule"/>
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWrong"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_toRightOf="@id/CheckRule"
+        android:text="I read the rules and regulations and accept them"
+        android:textColor="#707070"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <TextView
+        android:id="@+id/BtnNext"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/temp2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/shape_redbtn"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_below="@id/temp2"
+        android:indeterminateDrawable="@drawable/progress_bar_draw"
+        android:max="150"
+        android:progress="10"
+        android:progressDrawable="@drawable/progress_bar_draw"
+        android:theme="@style/RedProgress"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_50sdp"
+         android:layout_height="@dimen/_20sdp"/>
+</RelativeLayout>

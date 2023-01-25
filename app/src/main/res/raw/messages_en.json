@@ -1,0 +1,27 @@
+{
+  "PersianCalendarMonths": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+
+
+  "WeekDays": [
+    "sun",
+    "mon",
+    "tue",
+    "wed",
+    "thr",
+    "fri",
+    "sat"
+  ]
+}

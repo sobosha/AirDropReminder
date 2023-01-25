@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="colorRed" format="reference" />
+    <attr name="colorGreen" format="reference" />
+    <attr name="colorDarkGreen" format="reference" />
+    <attr name="colortexttitlestep" format="reference"/>
+    <attr name="colorPurple" format="reference" />
+    <attr name="DrakBlueThem" format="reference" />
+    <attr name="footerTheme" format="reference" />
+    <attr name="DrakBlueWhite" format="reference" />
+    <attr name="dotDrakBlueWhite" format="reference" />
+    <attr name="graySorme" format="reference" />
+    <attr name="DrakBlueWhite2" format="reference" />
+    <attr name="whiteBlue" format="reference" />
+    <attr name="whiteDark" format="reference" />
+    <attr name="chart" format="reference" />
+    <attr name="LightBlueWhite" format="reference" />
+    <attr name="LightBlue" format="reference" />
+    <attr name="RedWhite" format="reference" />
+    <attr name="background_main" format="reference" />
+    <attr name="fotter_cerv" format="reference" />
+    <attr name="GoldGreen" format="reference" />
+    <attr name="grayWhite" format="reference" />
+    <attr name="blueGray" format="reference" />
+    <attr name="white_lightBlue" format="reference" />
+    <attr name="asemani_gray" format="reference" />
+    <attr name="calendarBg" format="reference" />
+    <attr name="graySormeStroke" format="reference" />
+    <attr name="grayLightGray" format="reference" />
+    <attr name="chartBack" format="reference" />
+    <attr name="progress2" format="reference" />
+    <attr name="fadefooter" format="reference" />
+    <attr name="tabLayoutBg" format="reference" />
+    <attr name="tabBg" format="reference" />
+    <attr name="drawerTab" format="reference" />
+    <attr name="drawerback" format="reference" />
+    <attr name="niliAsemooni" format="reference" />
+    <attr name="cardBackPager" format="reference" />
+    <attr name="blueWhite" format="reference" />
+    <attr name="tabDrawer" format="reference" />
+    <attr name="circleSormeGrayStroke" format="reference" />
+    <attr name="grayAsemoni" format="reference" />
+    <attr name="cervGray" format="reference" />
+    <attr name="grayWhite2" format="reference" />
+    <attr name="fadeSpecial" format="reference" />
+    <attr name="submitProgress" format="reference" />
+    <attr name="circle" format="reference" />
+    <attr name="colorTheme" format="reference" />
+    <attr name="nilliDarkBlue" format="reference" />
+    <attr name="lightGrayBlue" format="reference" />
+    <attr name="transparentNilli" format="reference" />
+    <attr name="grayLightBlue" format="reference" />
+    <attr name="numPickerBg" format="reference" />
+    <attr name="whiteBluePanel" format="reference" />
+    <attr name="dialogColor" format="reference" />
+    <attr name="whiteSormeBtn" format="reference" />
+    <attr name="btnStroke" format="reference" />
+    <attr name="drawer" format="reference" />
+    <attr name="tabBack" format="reference" />
+    <attr name="newDarkWhite" format="reference" />
+    <attr name="buyDialog" format="reference" />
+    <attr name="grayWhiteMain" format="reference" />
+    <attr name="shapeKonj" format="reference" />
+    <attr name="shape_cerv" format="reference" />
+    <attr name="shape_cerv_video" format="reference" />
+    <attr name="shape_cerv3" format="reference" />
+    <attr name="shape_cerv4" format="reference" />
+    <attr name="calItem" format="reference" />
+    <attr name="DrakBlueWhite3" format="reference" />
+    <attr name="linDarkGray" format="reference" />
+    <attr name="VeryDarkWhite" format="reference" />
+    <attr name="shape_cerv2" format="reference" />
+    <attr name="shape_header" format="reference" />
+    <attr name="new_back" format="reference" />
+    <attr name="profile" format="reference" />
+    <attr name="circle2" format="reference" />
+    <!--    create New-->
+    <attr name="process" format="reference" />
+    <attr name="green" format="reference" />
+    <attr name="WhiteGray" format="reference" />
+    <attr name="grayWhiteNew" format="reference" />
+    <!---____________________________________________________-->
+
+    <!-- Base application theme. -->
+
+    <!-- Base application theme. -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--        <item name="android:windowDisablePreview">true</item>-->
+        <item name="android:forceDarkAllowed"  tools:targetApi="q">false</item>
+        <item name="shape_cerv2">@drawable/shape_cerv2_light</item>
+        <item name="shape_cerv3">@drawable/shape_cerv_l3</item>
+        <item name="colortexttitlestep">@color/colortexttitlestep</item>
+        <item name="shape_header">@drawable/shape_rec_light</item>
+        <item name="buyDialog">@drawable/shape_konh_light</item>
+        <item name="dialogColor">@drawable/shape_dialog</item>
+        <item name="DrakBlueThem">@color/colorWhite</item>
+        <item name="footerTheme">@color/colorWhite</item>
+        <item name="tabBack">@drawable/shape_white_btn</item>
+        <item name="shape_cerv">@drawable/shape_cerv_light</item>
+        <item name="shape_cerv_video">@drawable/shape_cerv_video_light</item>
+        <item name="WhiteGray">@color/purple</item>
+        <item name="circle2">@drawable/circle_light</item>
+
+        <item name="calItem">@color/colorWhite</item>
+        <item name="LightBlue">@color/purple</item>
+        <item name="linDarkGray">@color/newLight</item>
+        <item name="profile">@drawable/shape_profile_white</item>
+        <item name="shape_cerv4">@drawable/shape_cerv4_light</item>
+
+        <item name="grayWhiteNew">@drawable/shape_gray</item>
+        <item name="grayWhiteMain">@drawable/shape_white_gray_light</item>
+        <item name="drawer">@drawable/back_main_light</item>
+        <item name="shapeKonj">@drawable/shape_white_no_konj_light</item>
+        <item name="newDarkWhite">@color/colorWhite</item>
+        <item name="whiteDark">@color/colorWhite</item>
+        <item name="DrakBlueWhite">@color/colorDarkBlue</item>
+        <item name="dotDrakBlueWhite">@drawable/dot_shape_dark</item>
+        <item name="DrakBlueWhite2">@color/colorWhite</item>
+        <item name="numPickerBg">@drawable/num_picker_light</item>
+        <item name="LightBlueWhite">@color/colorWhite</item>
+        <item name="RedWhite">@color/colorRedDark</item>
+        <item name="GoldGreen">@color/colorLightOrange</item>
+        <item name="grayWhite">@color/colorLightGray</item>
+        <item name="submitProgress">@color/colorBlack</item>
+        <item name="DrakBlueWhite3">@color/colorSorme</item>
+        <item name="new_back">@drawable/shape_light_back</item>
+        <item name="grayWhite2">@color/blueLight</item>
+        <item name="fadefooter">@drawable/fade_footer</item>
+        <item name="whiteBlue">@color/colorWhite</item>
+        <item name="whiteBluePanel">@drawable/white_panel</item>
+        <item name="circle">@drawable/shape_circle_light</item>
+        <item name="colorTheme">@color/colorWhite</item>
+        <item name="graySorme">@color/blueLight</item>
+        <item name="process">@color/colorWhite</item>
+        <item name="green">@color/colorLightGreen</item>
+
+        <item name="background_main">@color/colorKerem</item>
+        <item name="tabLayoutBg">@drawable/white_cerv</item>
+        <item name="tabBg">@drawable/shape_tab_dark</item>
+        <item name="drawerTab">@drawable/tab_dark</item>
+        <item name="drawerback">@drawable/tab_white</item>
+        <item name="fadeSpecial">@drawable/fade_bottom_dialog_light</item>
+        <item name="tabDrawer">@drawable/back_white</item>
+
+        <item name="cardBackPager">@drawable/white_cerv_shadow</item>
+
+        <item name="blueWhite">@color/colorWhite</item>
+        <item name="VeryDarkWhite">@color/colorDarkVery</item>
+
+        <item name="cervGray">@drawable/cerv_gray_l</item>
+        <item name="btnStroke">@drawable/shape_white_btn</item>
+        <item name="blueGray">@color/colorGrayChart</item>
+        <item name="white_lightBlue">@color/colorWhite</item>
+        <item name="asemani_gray">@color/colorGray</item>
+        <item name="calendarBg">@drawable/shape_white_stroke</item>
+        <item name="chart">@drawable/circle_gray</item>
+        <item name="graySormeStroke">@drawable/circle_gray_btn</item>
+        <item name="colorRed">@color/colorRedMain</item>
+        <item name="colorGreen">@color/colorGreenMain</item>
+        <item name="colorPurple">@color/colorPurpleMain</item>
+        <item name="colorDarkGreen">@color/colorDarkGreen</item>
+        <item name="grayLightGray">@color/colorGray</item>
+
+        <item name="fotter_cerv">@drawable/footer_light</item>
+        <item name="whiteSormeBtn">@drawable/footer_dark</item>
+        <item name="chartBack">@color/chartLight</item>
+        <item name="progress2">@color/veryLightGray</item>
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryDark">@color/light_primary_dark</item>
+        <item name="colorAccent">@color/light_accent</item>
+        <item name="niliAsemooni">@color/asemoni</item>
+        <item name="circleSormeGrayStroke">@drawable/white_circle_sorme_stroke</item>
+        <item name="grayAsemoni">@color/grayIcon</item>
+
+
+        <item name="nilliDarkBlue">@color/colorDarkBlue</item>
+        <item name="lightGrayBlue">@drawable/sorme_stroke_tenrad</item>
+        <item name="transparentNilli">@android:color/transparent</item>
+        <item name="grayLightBlue">@drawable/back_txt_idea2</item>
+
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+        <item name="colorControlHighlight">@color/colorBlack</item>
+    </style>
+
+
+
+
+
+
+    <!--  new create  -->
+
+    <!--  create new  -->
+
+    <!--  create new  -->
+
+
+    <style name="SplashProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/shape_progress</item>
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">?attr/DrakBlueWhite</item>
+        <item name="colorControlNormal">?attr/DrakBlueWhite</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="RadioButtonStyleGreen" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorLightGreen</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#00ab65</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#ff666f</item>
+    </style>
+
+
+    <declare-styleable name="VerticalRangeSeekBar">
+        <!--the vertical RangeSeekBar draw orientation-->
+        <attr format="enum" name="rsb_orientation">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr format="enum" name="rsb_tick_mark_orientation">
+            <enum name="vertical" value="1"/>
+            <enum name="horizontal" value="2"/>
+        </attr>
+        <attr format="enum" name="rsb_indicator_text_orientation">
+            <enum name="vertical" value="1"/>
+            <enum name="horizontal" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RangeSeekBar">
+    <!--RangeSeekBar common attrs-->
+
+    <!--The maximum-->
+    <attr format="float" name="rsb_max"/>
+
+    <!--The minimum-->
+    <attr format="float" name="rsb_min"/>
+
+    <!--RangeSeekBar mode, single is normal seekBar, range is RangeSeekBar-->
+    <attr format="enum" name="rsb_mode">
+        <enum name="single" value="1"/>
+        <enum name="range" value="2"/>
+    </attr>
+
+    <!--RangeSeekBar gravity-->
+    <attr format="enum" name="rsb_gravity">
+        <enum name="top" value="0"/>
+        <enum name="bottom" value="1"/>
+        <enum name="center" value="2"/>
+    </attr>
+
+    <!--The min interval of the thumbs -->
+    <attr format="float" name="rsb_min_interval"/>
+
+    <!-- 0 for the normal mode, greater than 1 to switch to scale mode-->
+    <attr format="integer" name="rsb_tick_mark_number"/>
+
+    <!--Scale mode
+    Number according to the scale of the actual proportion of the distribution of the location (markTextArray must be a number)
+    Other bisects the current layout (markTextArray can be any character)
+    -->
+    <attr format="enum" name="rsb_tick_mark_mode">
+        <enum name="number" value="0"/>
+        <enum name="other" value="1"/>
+    </attr>
+
+    <!--The tick mark text gravity -->
+    <attr format="enum" name="rsb_tick_mark_gravity">
+        <enum name="left" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="right" value="2"/>
+    </attr>
+
+    <!--The tick mark text layout gravity -->
+    <attr format="enum" name="rsb_tick_mark_layout_gravity">
+        <enum name="top" value="0"/>
+        <enum name="bottom" value="1"/>
+    </attr>
+
+
+    <!--The tick mark text array -->
+    <attr format="reference" name="rsb_tick_mark_text_array"/>
+
+    <!--The tick mark text margin bottom to progress -->
+    <attr format="dimension" name="rsb_tick_mark_text_margin"/>
+
+    <attr format="dimension" name="rsb_tick_mark_text_size"/>
+
+    <attr format="color" name="rsb_tick_mark_text_color"/>
+
+    <!--it just work in range && number mode now-->
+    <attr format="color" name="rsb_tick_mark_in_range_text_color"/>
+
+    <attr format="dimension" name="rsb_progress_height"/>
+
+    <attr format="dimension" name="rsb_progress_radius"/>
+
+    <!--the color of progress bar when in progress-->
+    <attr format="color" name="rsb_progress_color"/>
+    <!--the default color of the progress bar-->
+    <attr format="color" name="rsb_progress_default_color"/>
+
+    <attr format="reference" name="rsb_progress_drawable"/>
+
+    <attr format="reference" name="rsb_progress_drawable_default"/>
+
+
+        <!--SeekBar attrs-->
+        <attr format="enum" name="rsb_indicator_show_mode">
+            <enum name="showWhenTouch" value="0"/>
+            <enum name="alwaysHide" value="1"/>
+            <enum name="alwaysShowAfterTouch" value="2"/>
+            <enum name="alwaysShow" value="3"/>
+        </attr>
+        <attr format="dimension" name="rsb_indicator_height">
+            <enum name="wrap_content" value="-1"/>
+        </attr>
+        <attr format="dimension" name="rsb_indicator_width">
+            <enum name="wrap_content" value="-1"/>
+        </attr>
+        <!--indicator margin bottom to progress bar-->
+        <attr format="dimension" name="rsb_indicator_margin"/>
+        <attr format="dimension" name="rsb_indicator_text_size"/>
+        <attr format="color" name="rsb_indicator_text_color"/>
+        <!--indicator arrow size, it just work when you not use rsb_indicator_drawable -->
+        <attr format="dimension" name="rsb_indicator_arrow_size"/>
+        <!-- must use 9 path ！！！-->
+        <attr format="reference" name="rsb_indicator_drawable"/>
+        <attr format="color" name="rsb_indicator_background_color"/>
+        <attr format="dimension" name="rsb_indicator_padding_left"/>
+        <attr format="dimension" name="rsb_indicator_padding_right"/>
+        <attr format="dimension" name="rsb_indicator_padding_top"/>
+        <attr format="dimension" name="rsb_indicator_padding_bottom"/>
+        <attr format="dimension" name="rsb_indicator_radius"/>
+        <attr format="reference" name="rsb_thumb_drawable"/>
+        <!--the thumb inactivated is when you don't touch the thumb button-->
+        <attr format="reference" name="rsb_thumb_inactivated_drawable"/>
+        <attr format="dimension" name="rsb_thumb_width"/>
+        <attr format="dimension" name="rsb_thumb_height"/>
+        <attr format="float" name="rsb_thumb_scale_ratio"/>
+
+        <!--steps SeekBar-->
+        <attr format="integer" name="rsb_steps"/>
+        <attr format="color" name="rsb_step_color"/>
+        <attr format="dimension" name="rsb_step_width"/>
+        <attr format="dimension" name="rsb_step_height"/>
+        <attr format="dimension" name="rsb_step_radius"/>
+        <attr format="boolean" name="rsb_step_auto_bonding"/>
+        <attr format="reference" name="rsb_step_drawable"/>
+
+    </declare-styleable>
+
+
+    <style name="dastnevis">
+        <item name="android:fontFamily">@font/danstevis</item>
+    </style>
+
+    <style name="negar">
+        <item name="android:fontFamily">@font/negaar_regular</item>
+    </style>
+
+    <style name="dana">
+        <item name="android:fontFamily">@font/dana_fa_num_regular</item>
+    </style>
+
+    <style name="poppins">
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="RedProgress">
+        <item name="colorAccent">#ff0000</item>
+    </style>
+
+    <style name="RadioButtonStyle2" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#707070</item>
+        <item name="android:textColorSecondary">#707070</item>
+    </style>
+</resources>

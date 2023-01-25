@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_3sdp">
+
+<!--     -->
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/relDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_yellow_btn"
+        android:gravity="end"
+        android:minHeight="@dimen/_50sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <!--         txt desc-->
+        <RelativeLayout
+            android:layout_toEndOf="@+id/relInforDay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/txtDays"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:gravity="center|right"
+                android:text="یاد اور خوردن دارو"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:id="@+id/txtLine"
+                android:layout_toLeftOf="@+id/txtDays"
+                android:layout_toRightOf="@+id/txtDays"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorWhite"/>
+        </RelativeLayout>
+
+        <!-- btns -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/relInforDay"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp">
+            <!-- active btn -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:switchMinWidth="@dimen/_20sdp"
+                android:gravity="center"
+                android:checked="true"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_11sdp"
+                android:theme="@style/SCBSwitch"/>
+            <!-- time -->
+            <LinearLayout
+                android:id="@+id/LinTimes"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/txtTimeDays"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_11sdp" />
+                <ImageView
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/clock"/>
+            </LinearLayout>
+
+            <!-- set sound -->
+            <ImageView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="visible"
+                android:id="@+id/imgSound"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingRight="@dimen/_6sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:src="@drawable/sound"
+                android:text="12:00"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+<!--     circle -->
+
+    <ImageView
+        android:id="@+id/imgPlusDay"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_tick" />
+</RelativeLayout>

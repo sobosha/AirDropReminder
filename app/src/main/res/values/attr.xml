@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="mProgressAttrs">
+        <attr name="imageSrc" format="reference" />
+        <attr name="imgWidth" format="dimension" />
+        <attr name="imgHeight" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="txtSize" format="dimension" />
+        <attr name="txtColor" format="color" />
+        <attr name="btnBg" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PDFViewPager">
+        <attr name="assetFileName" format="string" /> <!-- Load PDF from Asset -->
+        <attr name="pdfUrl" format="string" /> <!-- Load PDF from remote URL -->
+        <attr name="scale" format="float" /> <!-- Set initial scale for PDF -->
+    </declare-styleable>
+
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+</resources>

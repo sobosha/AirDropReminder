@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/txtDayOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="?asemani_gray"
+        android:text="@string/DetermineTheDays"/>
+
+
+    <LinearLayout
+        android:tag="7"
+        android:id="@+id/linSaturday"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtDayOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Saturday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbSaturday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:tag="4"
+        android:id="@+id/linWednesday"
+        android:layout_toStartOf="@+id/linSunday"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtDayOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Wednesday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbWednesday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:tag="1"
+        android:id="@+id/linSunday"
+        android:orientation="horizontal"
+        android:layout_below="@id/linSaturday"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Sunday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbSunday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:tag="5"
+        android:id="@+id/linThursday"
+        android:layout_toStartOf="@+id/linSunday"
+        android:orientation="horizontal"
+        android:layout_below="@id/linWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Thursday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbThursday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:tag="2"
+        android:id="@+id/linMonday"
+        android:orientation="horizontal"
+        android:layout_below="@id/linSunday"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Monday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbMonday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:tag="6"
+        android:id="@+id/linFriday"
+        android:layout_toStartOf="@+id/linSunday"
+        android:orientation="horizontal"
+        android:layout_below="@id/linThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Friday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbFriday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:tag="3"
+        android:id="@+id/linTuesday"
+        android:orientation="horizontal"
+        android:layout_below="@id/linMonday"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+
+        <TextView
+            android:tag="tuesday"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="?asemani_gray"
+            android:text="@string/Tuesday"/>
+
+
+        <RadioButton
+            android:id="@+id/rdbTuesday"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RadioButtonStyleGreen"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

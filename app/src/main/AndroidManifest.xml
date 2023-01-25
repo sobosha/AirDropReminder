@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.diacoipj.airdropreminder">
+
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"/>
+   <!--<uses-permission android:name="ir.mservices.market.BILLING" />-->
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  tools:remove="android:maxSdkVersion"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <queries>
+        <package android:name="ir.mservices.market" />
+        <intent>
+            <action android:name="ir.mservices.market.InAppBillingService.BIND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.diacoipj.airdropreminder.MyApp"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="false"
+        android:theme="@style/LightTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl">
+        <!-- push - firebase  -->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1813199817095629~9167393790"/>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_518322220404" />
+
+        <service
+            android:name="co.ronash.pushe.fcm.FcmService"
+            tools:node="remove" />
+
+        <service android:name="com.diacoipj.airdropreminder.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.diacoipj.airdropreminder.FirebaseInstanceStart">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.diacoipj.airdropreminder.NotifyActivity"
+            android:label="liom"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.diacoipj.airdropreminder.Setting.MyPushListener"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="co.ronash.pushe.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="metrix_appId"
+            android:value="dctjlnduyrzoaim" />
+
+        <!-- acticities -->
+        <activity android:name="com.diacoipj.airdropreminder.AlarmActivity"></activity>
+        <activity
+            android:name="com.diacoipj.airdropreminder.MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diacoipj.airdropreminder.ParamsActivity"
+            android:label="لیوم بانو"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--http://www.liom-app.ir/liom-->
+                <data
+                    android:host="app"
+                    android:scheme="liom" />
+
+            </intent-filter>
+        </activity>
+
+
+
+
+
+        <receiver android:name="com.diacoipj.airdropreminder.Other.Reminders.AlarmManager.AlertReceiver" />
+        <receiver android:name="com.diacoipj.airdropreminder.Other.Reminders.AlarmManager.NotifReceiver" />
+        <receiver android:name="com.diacoipj.airdropreminder.BroadTest" />
+    </application>
+
+</manifest>

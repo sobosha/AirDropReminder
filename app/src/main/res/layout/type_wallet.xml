@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_pill"
+        android:clickable="true"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:scrollbarThumbVertical="@drawable/shape_redbtn"
+        android:layout_height="@dimen/_150sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:scrollbarSize="@dimen/_2sdp"
+        android:scrollbars="vertical"
+        />
+
+</RelativeLayout>

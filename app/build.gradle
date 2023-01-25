@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.diacoipj.airdropreminder"
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0 Google" //IRA BAZAR MYKET Google 2.3.2 - vCode 53
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //debuggable true
+            //shrinkResources true
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+  //  implementation 'ir.tapsell.sdk:tapsell-sdk-android:4.7.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.jaredrummler:android-device-names:1.1.5'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+//video player
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.16'
+
+
+
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.squareup.okhttp:okhttp:2.4.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+
+    implementation 'com.github.JungHsuan:CircularList:1.2.3'
+    implementation 'com.budiyev.android:circular-progress-bar:1.2.2'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.1@aar'
+    implementation 'com.github.pedromassango:doubleClick:3.0'
+
+    implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.wdullaer:materialdatetimepicker:2.3.0'
+    implementation 'me.samlss:bloom:1.0.0'
+    implementation 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.IntruderShanky:scatter-piechart:1.0.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+
+    //firebase   && pushPole
+    implementation 'co.ronash.android:pushe-base:1.6.3'
+//    implementation 'com.google.android.gms:play-services-ads:17.2.1'
+    implementation 'com.google.android.gms:play-services-ads:20.3.0'
+
+    ///check//
+    implementation 'com.github.omadahealth:swipy:1.2.3@aar'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.0'
+    implementation 'ir.metrix:metrix:1.0.5'
+    implementation 'com.google.android.material:material:1.3.0'
+
+//    offline video player
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+    implementation 'com.google.firebase:firebase-ads:20.3.0'
+
+ //   implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.14.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.14.1'
+    implementation 'com.google.android.exoplayer:extension-ima:2.14.1'
+    implementation 'com.google.android.gms:play-services-ads-lite:20.3.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
